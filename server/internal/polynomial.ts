@@ -25,6 +25,7 @@ class Polynomial {
     //Degree should be equal to the length of the coefficients list plus one (one for every degree term, plus the constant)
     constructor(coeffecients: number[], variable: string){
         this.degree = coeffecients.length - 1;
+        this.terms = [];
         for(let i = 0; i < coeffecients.length; i++)
         {
             if(i < coeffecients.length - 1)
